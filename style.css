@@ -1,0 +1,85 @@
+@font-face {
+	font-family: Gilroy;
+	src: url(./fonts/Gilroy-Medium.ttf);
+	font-weight: normal;
+}
+@font-face {
+	font-family: Gilroy;
+	src: url(./fonts/Gilroy-Bold.ttf);
+	font-weight: bold;
+}
+
+html, body {
+	font-size: 18px;
+	background-color: white;
+	font-family: Gilroy;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+.container {
+	width: 65%;
+	min-width: 19rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	padding: 1.8rem 0; 
+	display: flex;	
+	justify-content: space-between;
+}
+a {
+	color: #828282;
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+hr {
+	margin: 0 auto;
+}
+.description {
+	width: 100%;
+	margin-top: 1.8rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.name {
+	font-size: 2.63rem;
+	font-weight: bold;
+	line-height: 3.25rem;
+}
+.language {
+	transform: rotate(-90deg);
+	margin-right: -1.5rem;
+   margin-bottom: 1.4rem;
+	font-size: .89rem;	
+}
+.slash {
+	font-weight: bold;
+}
+
+.image {
+	margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 650px) {
+	.container {
+      width: 90%;
+	}
+	.image {
+		min-height: 37rem;		
+		background: url(./img/itsme1.jpg);
+	}
+}
+@media screen and (min-width: 651px) {	
+	.image {
+		min-height: 20rem;
+		background: url(./img/itsme.jpg);
+	}
+}
